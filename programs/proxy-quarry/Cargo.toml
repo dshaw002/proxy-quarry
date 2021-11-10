@@ -1,0 +1,21 @@
+[package]
+name = "proxy-quarry"
+version = "0.1.0"
+description = "Created with Anchor"
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "proxy_quarry"
+
+[features]
+no-entrypoint = []
+no-idl = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = "0.17.0"
+anchor-spl = "0.17.0"
+quarry-mine = { version = "1.9.0", features = ["cpi"] }
+spl-token = { version = "3.1.1", features = ["no-entrypoint"] }

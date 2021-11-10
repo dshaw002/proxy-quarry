@@ -1,0 +1,12 @@
+[programs.localnet]
+proxy_quarry = "5A1Ue8wkuHWAdiQkmurvARuoCvJqCofVC5LXG3Wz1M2Z"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "devnet"
+wallet = "/root/.config/solana/id.json"
+
+[scripts]
+test = "mocha -t 1000000 tests/"
