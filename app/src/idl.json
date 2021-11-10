@@ -1,0 +1,142 @@
+{
+  "version": "0.0.0",
+  "name": "proxy_quarry",
+  "instructions": [
+    {
+      "name": "createProxyMiner",
+      "accounts": [
+        {
+          "name": "user",
+          "isMut": false,
+          "isSigner": true
+        },
+        {
+          "name": "miner",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "minerAuthority",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "quarry",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "rewarder",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "systemProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "tokenProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "tokenMint",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "quarryMineProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "minerVault",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": []
+    },
+    {
+      "name": "stakeCoin",
+      "accounts": [
+        {
+          "name": "user",
+          "isMut": false,
+          "isSigner": true
+        },
+        {
+          "name": "minerAuthority",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "quarry",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "tempToken",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "minerVault",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "miner",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "rewarder",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "tokenProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "quarryMineProgram",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": [
+        {
+          "name": "amt",
+          "type": "u64"
+        },
+        {
+          "name": "bumpSeed",
+          "type": "u8"
+        }
+      ]
+    }
+  ],
+  "errors": [
+    {
+      "code": 300,
+      "name": "CreateMiner",
+      "msg": "Issue creating miner"
+    },
+    {
+      "code": 301,
+      "name": "CreateMinerVault",
+      "msg": "Issue creating miner vault"
+    },
+    {
+      "code": 302,
+      "name": "StakeTokens",
+      "msg": "Issue staking tokens"
+    }
+  ],
+  "metadata": {
+    "address": "5A1Ue8wkuHWAdiQkmurvARuoCvJqCofVC5LXG3Wz1M2Z"
+  }
+}

@@ -1,0 +1,147 @@
+body {
+  overflow-x: hidden;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.frm p {
+  width: 100%;
+}
+
+.frm label span {
+  min-width: 9vw;
+  width: 35%;
+  display: inline-block;
+}
+
+.lblSpan {
+  margin-left: 10px;
+  height: 2vw;
+  width: 40vw;
+}
+
+.frm {
+  display: block;
+  width: 80%;
+  margin-top: 200px;
+  padding: 25px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background: rgba(0,0,0,0.2);
+  margin-bottom: 30px;
+}
+.frm label {
+  display: block;
+  margin-bottom: 14px;
+  text-align: left;
+  width: 90%;
+  margin-left: 0;
+}
+
+.frm input[type="text"] {
+  margin-left: 10px;
+  border-radius: 5px;
+  font-size: calc(10px + 1vmin);
+  padding: 8px 10px;
+  border: none;
+  height: 2vw;
+  width: 60%;
+}
+
+.frm input[type="submit"] {
+  color:#fff;
+  border: none;
+  background-color: #6ddd84;
+  font-size: calc(10px + 1vmin);
+  padding: 15px 10px;
+  border-radius: 10px;
+  width: 80%;
+  font-weight: bold;
+  cursor: pointer;
+}
+.frm input[type="submit"]:hover {
+  background-color: #50a461;
+}
+
+.btn-connect {
+  margin: 25px auto;
+}
+
+a { 
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.smaller-logo {
+  height: auto;
+  max-width: 450px;
+  width: 100%;
+  margin-top: 200px;
+}
+
+.App-header {
+  /* background-color: #282c34; */
+  background-color: #000;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 1vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+div.wallet-adapter-dropdown { display: block; }
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 960px) {
+  .frm {
+    width: 96%;
+    padding: 1%;
+    padding-bottom: 5%;
+  }
+  .frm label {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .frm label span {
+    width: 100%;
+    display: block;
+    margin-bottom: 5px;
+  }
+  .lblSpan { 
+    margin-left: 0; 
+    font-size: calc(8px + 1vmin);
+  }
+
+  .frm input[type="text"] {
+    padding: 8px 2%;
+    margin-left: 0;
+    width: 90%;
+  }
+}
